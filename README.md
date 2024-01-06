@@ -14,7 +14,8 @@
 1. Aplikacijo prenesemo na računalnik kot zip datoteko
 2. Preneseno mapo odpremo znotraj Android Studia `File - Open File or Project`.
 3. Počakamo da orodje `Gradle sync` opravi vse potrebne namestitve (ta korak je lahko dokaj počasen, to je čisto normalno)
-4. Aplikacijo zaženemo z `Run 'app'` na emulatorju ali na Android telefonu (potrebno imeti vključeno USB debugging)
+4. V datoteki `Api.kt` je potrebno v 15 vrstici spremenljivko `private val url` nastaviti na vaš url naslov
+5. Aplikacijo zaženemo z `Run 'app'` na emulatorju ali na Android telefonu (potrebno imeti vključeno USB debugging)
 
 ## Pogosta vprašanja in odgovori
 V tej sekciji bomo odgovorili na vsa vprašanja, ki jih boste imeli o aplikaciji in njenji uporabi. Poglejte mogoče najprej to sekcijo, če odgovora na vaše vprašanje še ni, pa kar vprašajte in bomo pomagali, ter dodali odgovor tudi za vse ostale sošolce.
