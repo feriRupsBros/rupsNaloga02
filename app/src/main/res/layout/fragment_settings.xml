@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuidelineForSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/application_settings_title"
+        android:textSize="@dimen/title_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theme"
+        android:textSize="@dimen/regular_font_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/themeDropdown"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/themeDropdown" />
+
+    <TextView
+        android:id="@+id/textUserSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/session"
+        android:textSize="@dimen/regular_font_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/userSessionDropdown"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userSessionDropdown" />
+
+    <TextView
+        android:id="@+id/textLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:textSize="@dimen/regular_font_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLanguage"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextLanguage" />
+
+    <ImageButton
+        android:id="@+id/buttonSaveTheme"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/save_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/themeDropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuidelineForSave"
+        app:layout_constraintTop_toTopOf="@+id/themeDropdown"
+        app:srcCompat="@drawable/save"
+        app:tint="?colorOnPrimary"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonSaveUserSession"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/save_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/userSessionDropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuidelineForSave"
+        app:layout_constraintTop_toTopOf="@+id/userSessionDropdown"
+        app:srcCompat="@drawable/save"
+        app:tint="?colorOnPrimary" />
+
+    <ImageButton
+        android:id="@+id/buttonLanguage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/save_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuidelineForSave"
+        app:layout_constraintTop_toTopOf="@+id/editTextLanguage"
+        app:srcCompat="@drawable/translate"
+        app:tint="?colorOnPrimary" />
+
+    <Spinner
+        android:id="@+id/themeDropdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/select_a_theme"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuidelineForSave"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <Spinner
+        android:id="@+id/userSessionDropdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/select_session_settings"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuidelineForSave"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/themeDropdown" />
+
+    <EditText
+        android:id="@+id/editTextLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/selected_language"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuidelineForSave"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/userSessionDropdown" />
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/home_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home"
+        app:tint="?colorOnPrimary"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonLoginPage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="@string/login_logout_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bug"
+        app:tint="?colorOnPrimary"
+        tools:ignore="RedundantDescriptionCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

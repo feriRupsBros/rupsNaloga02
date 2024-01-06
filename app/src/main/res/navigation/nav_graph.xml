@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <action android:id="@+id/action_to_homeFragment"
+        app:popUpTo="@id/nav_graph.xml"
+        app:popUpToInclusive="true"
+        app:destination="@id/homeFragment" />
+
+    <action android:id="@+id/action_to_loginFragment"
+        app:popUpTo="@id/nav_graph.xml"
+        app:popUpToInclusive="true"
+        app:destination="@id/loginFragment" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="si.um.feri.androidrups.HomeFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_graphsFragment"
+            app:destination="@id/graphsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_adminFragment"
+            app:destination="@id/adminFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="si.um.feri.androidrups.MapsFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_singleLocationFragment"
+            app:destination="@id/singleLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="si.um.feri.androidrups.LoginFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="si.um.feri.androidrups.RegisterFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/graphsFragment"
+        android:name="si.um.feri.androidrups.GraphsFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_graphs" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="si.um.feri.androidrups.InfoFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="si.um.feri.androidrups.AdminFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_singleLocationFragment"
+            app:destination="@id/singleLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="si.um.feri.androidrups.SettingsFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/singleLocationFragment"
+        android:name="si.um.feri.androidrups.SingleLocationFragment"
+        android:label="RUPS"
+        tools:layout="@layout/fragment_single_location" />
+</navigation>

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name" translatable="false">AndroidRups</string>
+    <string name="home_page_title">HOME PAGE</string>
+    <string name="graphical_data">Graphical data</string>
+    <string name="data_locations">Data gathering locations</string>
+    <string name="info_documentation">Info &amp; Documentation></string>
+    <string name="graphs_button">Graphs</string>
+    <string name="maps_button">Maps</string>
+    <string name="info_button">Info</string>
+    <string name="administrative_title">ADMINISTRATIVE USER OPTIONS</string>
+    <string name="admin_panel">Admin panel</string>
+    <string name="application_settings">Application settings</string>
+    <string name="admin_button">Admin</string>
+    <string name="settings_button">Settings</string>
+    <string name="home_button">Home button</string>
+    <string name="login_logout_button">Login/Logout button</string>
+    <string name="info_documentation_title">INFO &amp; DOCUMENTATION></string>
+    <string name="air_quality_2022">Air quality in Slovenia in year 2022</string>
+    <string name="air_quality_2021">Air quality in Slovenia in year 2020</string>
+    <string name="air_quality_2020">Air quality in Slovenia in year 2020</string>
+    <string name="file_name">File name</string>
+    <string name="download_button">Download</string>
+    <string name="login_portal_title">LOGIN PORTAL</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login_button">Login</string>
+    <string name="new_user_register_title">NEW USER REGISTER</string>
+    <string name="create_a_profile">Create a profile</string>
+    <string name="register_button">Register</string>
+    <string name="register_portal_title">REGISTER PORTAL</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="choose_username">Choose Username</string>
+    <string name="more_info_button">More info</string>
+    <string name="graphs_title">GRAPHS</string>
+    <string name="location_info_title">LOCATION INFO</string>
+    <string name="application_settings_title">APPLICATION SETTINGS</string>
+    <string name="theme">Theme</string>
+    <string name="session">Session</string>
+    <string name="language">Language</string>
+    <string name="save_button">Save</string>
+    <string name="select_a_theme">Select a theme</string>
+    <string name="select_session_settings">Select session settings</string>
+    <string name="selected_language">Selected language</string>
+    <string name="admin_portal_title">ADMIN PORTAL</string>
+    <string name="name">Name</string>
+    <string name="region">Region</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="source">Source</string>
+    <string name="reliability">Reliability</string>
+    <string name="pm_10" translatable="false">PM10</string>
+    <string name="pm_2_5" translatable="false">PM2.5</string>
+    <string name="so2" translatable="false">SO2</string>
+    <string name="co" translatable="false">CO</string>
+    <string name="o3" translatable="false">O3</string>
+    <string name="no2" translatable="false">NO2</string>
+    <string name="c6h6" translatable="false">C6H6</string>
+    <string name="measuring_start">Measuring Start</string>
+    <string name="measuring_end">Measuring End</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_region">Enter Region</string>
+    <string name="enter_longitude">Enter Longitude</string>
+    <string name="enter_latitude">Enter Latitude</string>
+    <string name="enter_source">Enter Source</string>
+    <string name="enter_reliability">Enter Reliability</string>
+    <string name="enter_pm_10">Enter PM10</string>
+    <string name="enter_pm_2_5">Enter PM2.5</string>
+    <string name="enter_so2">Enter SO2</string>
+    <string name="enter_co">Enter CO</string>
+    <string name="enter_no2">Enter NO2</string>
+    <string name="enter_o3">Enter O3</string>
+    <string name="enter_c6h6">Enter C6H6</string>
+    <string name="enter_measuring_start">Enter Measuring start</string>
+    <string name="enter_measuring_end">Enter Measuring end</string>
+    <string name="add_button">Add</string>
+    <string name="maps_title">MAPS</string>
+    <string name="current_location">Current location</string>
+    <string name="download_completed">Download completed</string>
+    <string name="file_handler_missing">No handler for this type of file.</string>
+    <string name="setting_saved">Setting successfully saved!</string>
+    <string name="missing_username_password">Missing username or password!</string>
+    <string name="incorrect_username_password">Incorrect username or password!</string>
+    <string name="passwords_match_error">Passwords don\'t match!</string>
+    <string name="users_exists">User already exists!</string>
+    <string name="admin_add_error_01">Name can\'t be empty</string>
+    <string name="admin_add_error_02">Region can\'t be empty</string>
+    <string name="admin_add_error_03">Latitude isn\'t a number</string>
+    <string name="admin_add_error_04">Longitude isn\'t a number</string>
+    <string name="admin_add_error_05">Source can\'t be empty</string>
+    <string name="admin_add_error_06">Reliability isn\'t a number</string>
+    <string name="admin_add_error_07">PM10 isn\'t a number</string>
+    <string name="admin_add_error_08">PM2.5 isn\'t a number</string>
+    <string name="admin_add_error_09">SO2 isn\'t a number</string>
+    <string name="admin_add_error_10">CO isn\'t a number</string>
+    <string name="admin_add_error_11">O3 isn\'t a number</string>
+    <string name="admin_add_error_12">NO2 isn\'t a number</string>
+    <string name="admin_add_error_13">C6H6 isn\'t a number</string>
+    <string name="admin_add_error_14">Measuring start can\'t be empty</string>
+    <string name="admin_add_error_15">Measuring start isn\'t in format yyyy-MM-dd HH:mm</string>
+    <string name="admin_add_error_16">Measuring end can\'t be empty</string>
+    <string name="admin_add_error_17">Measuring end isn\'t in format yyyy-MM-dd HH:mm</string>
+    <string name="light_theme">Light theme</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="session_remain">Stay logged in</string>
+    <string name="session_logout">Logout after close</string>
+    <string name="set_location">Set Location</string>
+    <string name="save_location">Save Location</string>
+</resources>
